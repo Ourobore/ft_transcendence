@@ -1,18 +1,43 @@
 # ft_transcendence
 
-## Development
+<br/>
+
+An enhanced Pong game. You can now play this famous game with your friends wherever they are, and chat with them in real time!
 
 <br/>
+
+## Tech Stack
+
+### Frontend:
+
+- Vue3
+- Pinia
+- Bootstrap
+
+### Backend:
+
+- NestJS
+- TypeORM
+- PostgreSQL
+- SocketIO
+
+<br/>
+
+## How to run the app:
+
+First check the ports and hosts in `.env` file. Then:
+
+```
+$ make
+```
+
+Or to run locally:
 
 ### Database
 
-First check the ports and hosts in `.env` file. Then, to start the database, run:
-
 ```bash
-docker-compose up -d postgres
+$ docker-compose up -d postgres
 ```
-
-<br/>
 
 ### Backend
 
@@ -22,8 +47,6 @@ $ npm install
 $ npm run dev
 ```
 
-<br/>
-
 ### Frontend
 
 ```bash
@@ -31,6 +54,8 @@ $ cd Frontend
 $ npm install
 $ npm run dev
 ```
+
+<br/>
 
 All these commands (and more) are also available via Makefile to easily launch dev environments locally.
 
